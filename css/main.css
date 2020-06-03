@@ -12,7 +12,10 @@ html {
 
 body {
     background: #333;
-    color: #eee;
+    background: linear-gradient(#666, #333);
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
 }
 
 h1 {
@@ -49,7 +52,6 @@ p {
 
 #top-bar .menu-button i {
     font-size: 3rem;
-    justify-content: center;
 }
 
 #top-bar .current-state {
