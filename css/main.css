@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    /* remove default margin and padding from all elements */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #eee;
+}
+
+/* top bar */
+#top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #000;
+}
+
+#top-bar .menu-button {
+    padding: 16px;
+}
+
+#top-bar .current-state {
+    text-align: center;
+}
