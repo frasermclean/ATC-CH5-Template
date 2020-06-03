@@ -5,10 +5,30 @@
     padding: 0;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif;    
+    font-size: 1.8vh;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background: #333;
     color: #eee;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 2.0rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 1.6rem;
 }
 
 /* top bar */
@@ -17,12 +37,31 @@ body {
     flex-direction: row;
     align-items: center;
     background: #000;
+    opacity: 0.9;
+    height: 10vh;
 }
 
 #top-bar .menu-button {
-    padding: 16px;
+    text-align: center;
+    justify-content: center;
+    width: 8vw;
+}
+
+#top-bar .menu-button i {
+    font-size: 3rem;
+    justify-content: center;
 }
 
 #top-bar .current-state {
     text-align: center;
+    width: 80vw;
+}
+#top-bar .date-time {
+    width: 12vw;
+}
+
+#top-bar .date-time > p {
+    text-align: right;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
 }
