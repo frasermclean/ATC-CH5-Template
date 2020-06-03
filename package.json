@@ -1,0 +1,12 @@
+{
+  "name": "atc-template",
+  "version": "0.0.1",
+  "description": "ATC CH5 Template",
+  "author": "Fraser McLean",
+  "scripts": {},
+  "dependencies": {
+    "@crestron/ch5-crcomlib": "^1.0.0",
+    "@crestron/ch5-theme": "^1.0.0",
+    "@crestron/ch5-utilities-cli": "^0.1.47"
+  }
+}
