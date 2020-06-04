@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./node_modules/@crestron/ch5-theme/output/themes/light-theme.css" />
     <title>ATC CH5 Test</title>
 </head>
 <body>
@@ -24,10 +25,16 @@
 
     <!-- main content -->
     <section id="main-content">
+        <ch5-button id="btn-1" label="Button 1" sendeventonclick="11" receivestateselected="11"></ch5-button>
+        <ch5-button id="btn-2" label="Button 2" sendeventonclick="12" receivestateselected="12"></ch5-button>
+        <ch5-button id="btn-3" label="Button 3" sendeventonclick="13" receivestateselected="13"></ch5-button>
     </section>
 
     <!-- bottom bar -->
     <section id="bottom-bar">
     </section>
+
+    <!-- load crestron cr-com-lib script -->
+    <script src="./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js"></script>
 </body>
 </html>

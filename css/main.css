@@ -67,3 +67,15 @@ p {
     padding: 0.4rem 0.8rem;
     font-size: 1.2rem;
 }
+
+/* main content */
+#main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+#main-content ch5-button {
+    margin: 0.5vw;
+}
