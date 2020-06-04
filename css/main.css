@@ -61,21 +61,30 @@ p {
 }
 
 #top-bar .date-time > p {
+    text-align: right;
     padding-top: 0.2rem;
-    padding-bottom: 0.2rem;    
-    font-size: 1.1rem;
+    padding-bottom: 0.2rem; 
+    padding-right: 2vw;   
+    font-size: 1.2rem;
 }
 
 /* main content */
 #main-content {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     height: 80vh;
+    text-align: center;
 }
 
-#main-content ch5-button {
-    margin: 0.5vw;
+#main-content h2 {    
+    font-weight: lighter;
+    padding-bottom: 5vh;
+}
+
+#main-content p {
+    display: block;        
+    padding-bottom: 5vh;
 }
 
 /* bottom section */
@@ -94,4 +103,15 @@ p {
 #bottom-bar .volume-slider {
     align-items: center;
     width: 80vw;
+}
+
+/* source buttons */
+#source-buttons {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.source-button {
+    margin: 0.5vw;
 }
