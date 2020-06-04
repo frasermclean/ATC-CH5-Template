@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- top bar -->
-    <section id="top-bar">
+    <section id="top-bar" class="container-horizontal">
         <div class="menu-button">
             <i class="fas fa-bars"></i>
         </div>
@@ -24,10 +24,10 @@
     </section>
 
     <!-- main content -->
-    <section id="main-content">
+    <section id="main-content" class="container-vertical">
         <h2>Select a source</h2>
         <p>Select a source from the buttons below:</p>
-        <div id="source-buttons">
+        <div id="source-buttons" class="container-horizontal">
             <ch5-button id="source-laptop" class="source-button" label="Laptop" sendeventonclick="11" receivestateselected="11"></ch5-button>
             <ch5-button id="source-wireless" class="source-button" label="Wireless" sendeventonclick="12" receivestateselected="12"></ch5-button>
             <ch5-button id="source-television" class="source-button" label="Television" sendeventonclick="13" receivestateselected="13"></ch5-button>
@@ -35,14 +35,14 @@
     </section>
 
     <!-- bottom bar -->
-    <section id="bottom-bar">
-        <div class="mute-button">
-            <ch5-button id="btn-mute" label="Mute" sendeventonclick="14" receivestateselected="14"></ch5-button>
+    <section id="bottom-bar" class="container-horizontal">
+        <div id="mute-button-container" class="container-horizontal">
+            <ch5-button id="mute-button" label="Mute" sendeventonclick="mute-button-clicked" receivestateselected="mute-state-receive"></ch5-button>
         </div>
-        <div class="volume-slider">
-            <ch5-slider value="50" min="0" max="100" step="1" sendeventonchange="slider_value_on_change" receivestatevalue="receive_slider_value"></ch5-slider>
+        <div id="volume-slider-container" class="container-horizontal">
+            <ch5-slider id="volume-slider" value="50" min="0" max="100" step="1" sendeventonchange="volume-value-change" receivestatevalue="receive-volume-value"></ch5-slider>
         </div>
-        <div class="bottom-right">
+        <div id="bottom-right-container" class="container-horizontal">
         </div>
     </section>
 
