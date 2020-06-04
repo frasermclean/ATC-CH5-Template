@@ -77,3 +77,21 @@ p {
 #main-content ch5-button {
     margin: 0.5vw;
 }
+
+/* bottom section */
+#bottom-bar {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background: #000;
+}
+
+#bottom-bar .mute-button {
+    padding-left: 2vw;
+    width: 10vw;
+}
+
+#bottom-bar .volume-slider {
+    align-items: center;
+    width: 80vw;
+}

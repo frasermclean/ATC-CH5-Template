@@ -32,6 +32,14 @@
 
     <!-- bottom bar -->
     <section id="bottom-bar">
+        <div class="mute-button">
+            <ch5-button id="btn-mute" label="Mute" sendeventonclick="14" receivestateselected="14"></ch5-button>
+        </div>
+        <div class="volume-slider">
+            <ch5-slider value="50" min="0" max="100" step="1" sendeventonchange="slider_value_on_change" receivestatevalue="receive_slider_value"></ch5-slider>
+        </div>
+        <div class="bottom-right">
+        </div>
     </section>
 
     <!-- load crestron cr-com-lib script -->
