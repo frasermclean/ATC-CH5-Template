@@ -40,14 +40,12 @@ p {
     flex-direction: row;
     align-items: center;
     background: #000;
-    opacity: 0.9;
     height: 10vh;
 }
 
 #top-bar .menu-button {
-    text-align: center;
-    justify-content: center;
-    width: 8vw;
+    padding-left: 2vw;
+    width: 10vw;
 }
 
 #top-bar .menu-button i {
@@ -59,13 +57,13 @@ p {
     width: 80vw;
 }
 #top-bar .date-time {
-    width: 12vw;
+    width: 10vw;
 }
 
 #top-bar .date-time > p {
-    text-align: right;
-    padding: 0.4rem 0.8rem;
-    font-size: 1.2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;    
+    font-size: 1.1rem;
 }
 
 /* main content */
