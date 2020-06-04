@@ -4,7 +4,9 @@
   "description": "ATC CH5 Template",
   "author": "Fraser McLean",
   "scripts": {
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "archive": "yarn clean && ch5-cli archive -p ATC-Template -d app -o dist",
+    "deploy": "ch5-cli deploy -H tsw-760.lan -t touchscreen -p dist/ATC-Template.ch5z"
   },
   "dependencies": {
     "@crestron/ch5-crcomlib": "^1.0.0",
